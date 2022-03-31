@@ -1,0 +1,189 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+
+/*-------------------- login -------------------------------*/
+
+.login{
+    background: #64B2ED;
+}
+
+.form{
+    width: 20%;
+    padding: 5%;
+    margin: 8% auto;
+    background: #D7EDFF;
+    border-radius: 25px;
+}
+
+.form p{
+    font-size: 35px;
+    color: #005289;
+    margin: 0 auto;
+}
+
+.form .inputL{
+    background: white;
+    -webkit-text-stroke: 0.3px #64B2ED;
+    color: #64B2ED;
+    margin: 2% auto;
+    border: none;
+    box-shadow: #64B2ED 1px 1px 0 0;
+    border-radius: 30px;
+    height: 27px;
+    padding: 5px 18px;
+    width: 85%;
+    outline: none;
+}
+
+.form .btnL{
+    margin: 2% 16%;
+    border: none;
+    border-radius: 30px;
+    width: 60%;
+    height: 40px;
+    background: #005289;
+    color: #FFFFFF;
+    font-size:25px;
+}
+
+.form a{
+    text-decoration: none;
+    color: #005289;
+    margin: 0 23%;
+}
+
+.form a:hover{
+    color: #0A0A0A;
+}
+/*-------------------- Nav -------------------------------*/
+
+.nav ul{
+    list-style: none;
+}
+
+.nav ul li a{
+    text-decoration: none;
+    color: #005289;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.nav ul li{
+    display: inline-block;
+    margin: 5% 1%;
+    position: relative;
+    left: 40%;
+}
+
+
+/*-------------------- Inicio -------------------------------*/
+
+.sectionD .disco{
+    width: 30%;
+    position: relative;
+    left: 10%;
+}
+
+.sectionD p{
+    color: #005289;
+    font-size: 100px;
+    font-weight: 900;
+    position: absolute;
+    left: 60%;
+    bottom: 60%;
+}
+.sectionD span{
+    position: absolute;
+    left: 60%;
+    bottom: 60%;
+    border: #005289 5px solid;
+    width: 5%;
+    border-radius: 30px;
+}
+
+/*-------------------- Contacto -------------------------------*/
+
+.contac{
+    background: white;
+}
+
+.formC{
+    width: 30%;
+    padding: 5%;
+    margin: -4% auto;
+    border-radius: 25px;
+}
+
+.formC p{
+    font-size: 75px;
+    font-weight: 900;
+    color: #005289;
+    margin: 0 10%;
+}
+
+.formC span{
+    position: absolute;
+    left: 48%;
+    bottom: 70%;
+    border: #005289 5px solid;
+    width: 5%;
+    border-radius: 30px;
+}
+
+.formC .inputC{
+    background: #D7EDFF;
+    -webkit-text-stroke: 0.3px #005289;
+    color: #005289;
+    margin: 2% auto;
+    border: none;
+    box-shadow: #64B2ED 1px 1px 0 0;
+    border-radius: 30px;
+    height: 27px;
+    padding: 5px 18px;
+    width: 85%;
+    outline: none;
+}
+.formC textarea{
+    resize : none;
+    width: 325px;
+    height: 200px;
+     background: #D7EDFF;
+    -webkit-text-stroke: 0.3px #005289;
+    color: #005289;
+    border: none;
+    box-shadow: #64B2ED 1px 1px 0 0;
+    border-radius: 30px;
+    padding: 5px 18px;
+    outline: none;
+}
+
+.formC .btnC{
+    margin: 2% 16%;
+    border: none;
+    border-radius: 30px;
+    width: 60%;
+    height: 40px;
+    background: #005289;
+    color: #FFFFFF;
+    font-size:25px;
+}
+
+.formC .C{
+    font-size: 15px;
+}
+
+/*-------------------- Artistas -------------------------------*/
+.center{
+    display: grid;
+    place-items: center;
+}
+#circle span{
+    position: absolute;
+    height: 120px;
+    width: 20px;
+    transform-origin: bottom center;
+    text-align: center;
+}

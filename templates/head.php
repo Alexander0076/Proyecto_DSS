@@ -14,13 +14,12 @@
 
 <nav class="nav">
     <ul>
-        <li><a href="#">Inicio</a></li>
-        <li><a href="#">Reproductor</a></li>
-        <li><a href="#">Artista</a></li>
-        <li><a href="#">Evento</a></li>
-        <li><a href="#">Noticias</a></li>
-        <li><a href="#">Staff</a></li>
-        <li><a href="#">Contacto</a></li>
+        <li><a href="../view/inicio.php">Inicio</a></li>
+        <li><a href="../view/staff.php">Reproductor</a></li>
+        <li><a href="../view/artistas.php">Artista</a></li>
+        <li><a href="../view/evento.php">Evento</a></li>
+        <li><a href="../view/staff.php">Staff</a></li>
+        <li><a href="../view/contacto.php">Contacto</a></li>
         <li><a href="#">Usuario</a></li>
     </ul>
 </nav>

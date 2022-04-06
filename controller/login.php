@@ -8,15 +8,25 @@ require_once '../conexion/conexion.php';
         $Password = $_POST['password'];
        if (!empty($Usuario) && !empty($Password)) {
         $ResultadoCon;
-        $query1 = "SELECT COUNT(*) as 'Resultado' FROM usuario u WHERE u.usuario = $Usuario AND u.contrasena = $Password";
         $queryr1 = mysqli_query($conn,"SELECT COUNT(*) as 'Resultado' FROM usuario u WHERE u.usuario = '$Usuario' AND u.contrasena = '$Password'");
         while($consulta = mysqli_fetch_array($queryr1)){
             $ResultadoCon = $consulta['Resultado'];
-
         }
         if ($ResultadoCon == 1) {
-            $_SESSION['UsuarioIni'] = $Usuario;    
-            header('Location: ../view/inicio.php');
+            $queryr5 = $queryr1 = mysqli_query($conn,"SELECT tp.tipoUsuario FROM usuario u INNER JOIN tipousuario tp on tp.Id_tipoUsuario = u.Id_tipousuario WHERE u.usuario = '$Usuario';");
+            $_SESSION['UsuarioIni'] = $Usuario;
+            $resulTPU;
+            while ( $q5R= mysqli_fetch_array($queryr5)) {
+                $resulTPU = $q5R['tipoUsuario'];
+            } 
+            if ($resulTPU = 'Usuario') {
+                header('Location: ../view/inicio.php');    
+            }elseif ($resulTPU = 'Admin') {
+                
+            }elseif ($resulTPU = 'Staf') {
+                
+            }
+            
         }else if ($ResultadoCon == 0) {
         }
        }else {  

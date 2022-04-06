@@ -16,11 +16,11 @@
 <body class="login">
     <div class="form">
         <p style="margin: 0 18%;"><strong>Registrate</strong></p>
-        <form action="controller/registro.php" method="POST">
-            <input class="inputL" type="text" name="nombre" placeholder="Ingresa un nombre de usuario">
-            <input class="inputL" type="text" name="correo" placeholder="Ingresa un correo electronico">
+        <form action="controller/login.php" method="POST">
+            <input class="inputL" type="text" name="nombre" placeholder="Ingresa su nombre completo">
+            <input class="inputL" type="text" name="usuarion" placeholder="Ingresa un nombre de usuario">
             <input class="inputL" type="password" name="password" placeholder="Ingresa una contraseña">
-            <input class="btnL" type="button" value="Registrar" name="registrar">
+            <button class="btnL" name="registrar" type="submit">Registrar</button>
             <a href="index.php"><strong style="margin: 0 10%;">Regresar</strong></a>
         </form>
     </div>

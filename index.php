@@ -19,7 +19,7 @@
         <form action="controller/login.php" method="POST">
             <input class="inputL" type="text" name="usuario" placeholder="Ingresa tu usuario">
             <input class="inputL" type="password" name="password" placeholder="Ingresa tu contraseña">
-            <input class="btnL" type="button" value="Inicio" name="inicio">
+            <button class="btnL" name="inicio" type="submit">Inicio</button>
             <a href="regisrtar.php">Registrate <strong>ahora</strong></a>
         </form>
     </div>

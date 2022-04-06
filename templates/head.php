@@ -11,6 +11,9 @@
     <title>Radio</title>
 </head>
 <body>
+    <?php
+     session_start()
+    ?>
 
 <nav class="nav">
     <ul>
@@ -20,6 +23,9 @@
         <li><a href="../view/evento.php">Evento</a></li>
         <li><a href="../view/staff.php">Staff</a></li>
         <li><a href="../view/contacto.php">Contacto</a></li>
-        <li><a href="#">Usuario</a></li>
+        <?php
+        $usuINI = $_SESSION['UsuarioIni'];
+        echo "<li><a href='#'>$usuINI</a></li>"
+        ?>
     </ul>
 </nav>

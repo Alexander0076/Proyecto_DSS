@@ -18,7 +18,6 @@ require_once '../conexion/conexion.php';
             $_SESSION['UsuarioIni'] = $Usuario;    
             header('Location: ../view/inicio.php');
         }else if ($ResultadoCon == 0) {
-            
         }
        }else {  
            echo "Debe ingresar los datos requeridos";

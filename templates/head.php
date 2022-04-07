@@ -28,9 +28,27 @@
         <li><a href="../view/evento.php">Evento</a></li>
         <li><a href="../view/staff.php">Staff</a></li>
         <li><a href="../view/contacto.php">Contacto</a></li>
-        <?php
+        <li>
+        <div class="btn-group">
+  <button type="button" class="btn btn-primary"><?php
         $usuINI = $_SESSION['UsuarioIni'];
-        echo "<li><a href='#'>$usuINI</a></li>"
-        ?>
+        echo "<li><a style='color:white;' href='#'>$usuINI</a></li>"
+        ?></button>
+  <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <span class="sr-only">Toggle Dropdown</span>
+  </button>
+  <div class="dropdown-menu">
+    <a class="dropdown-item" href="../templates/cerrar.php">Cerrar sesion</a>
+    <div class="dropdown-divider"></div>
+    <a class="dropdown-item" href="../view/inicio.php">Inicio</a>
+  </div>
+</div>
+
+        </li>
+       
+
     </ul>
 </nav>
+<br>
+<br>
+

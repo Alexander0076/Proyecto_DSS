@@ -21,6 +21,7 @@
             <input class="inputL" type="password" name="password" placeholder="Ingresa tu contraseña">
             <button class="btnL" name="inicio" type="submit">Inicio</button>
             <a href="regisrtar.php">Registrate <strong>ahora</strong></a>
+            
         </form>
     </div>
 

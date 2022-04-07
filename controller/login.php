@@ -1,5 +1,5 @@
 <?php
-require_once '../conexion/conexion.php';
+require_once '../config/conexion.php';
 ?>
 <?php
 session_start();
@@ -19,10 +19,11 @@ if (isset($_POST['inicio'])) {
             while ($q5R = mysqli_fetch_array($queryr5)) {
                 $resulTPU = $q5R['tipoUsuario'];
             }
-            if ($resulTPU = 'Usuario') {
+            if ($resulTPU === 'Usuario') {
                 header('Location: ../view/inicio.php');
-            } elseif ($resulTPU = 'Admin') {
-            } elseif ($resulTPU = 'Staf') {
+            } elseif ($resulTPU === 'Admin') {
+            } elseif ($resulTPU === 'Staff') {
+                header('Location: ../staff/evento.php');
             }
         } else if ($ResultadoCon == 0) {
             header("location:../index.php" );

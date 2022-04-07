@@ -1,6 +1,6 @@
 <?php
-require_once '../conexion/conexion.php';
-include '../templates/head.php'
+require_once '../config/conexion.php';
+include '../templates/header.php'
 ?>
 <!DOCTYPE html>
 <html lang="en">

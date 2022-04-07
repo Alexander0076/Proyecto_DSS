@@ -120,7 +120,7 @@
 }
 
 .formC{
-    width: 30%;
+    width: 40%;
     padding: 5%;
     margin: -4% auto;
     border-radius: 25px;
@@ -136,7 +136,7 @@
 .formC span{
     position: absolute;
     left: 48%;
-    bottom: 58%;
+    bottom: 73%;
     border: #005289 5px solid;
     width: 5%;
     border-radius: 30px;
@@ -328,7 +328,7 @@
 .staff .span{
     position: absolute;
     left: 48%;
-    bottom: 62%;
+    bottom: 80%;
     border: #005289 5px solid;
     width: 5%;
     border-radius: 30px;

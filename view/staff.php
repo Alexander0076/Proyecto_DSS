@@ -1,6 +1,6 @@
 <?php
 include '../templates/head.php';
-require_once '../conexion/conexion.php';
+require_once '../config/conexion.php';
 ?>
 <section>
 <?php

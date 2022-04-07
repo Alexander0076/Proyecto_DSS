@@ -1,6 +1,6 @@
 <?php
-$hostname = "localhost:3308";
-// $hostname = "localhost";
+// $hostname = "localhost:8080";
+$hostname = "localhost";
 $database = "dbdss";
 $username = "root";
 $password = "";

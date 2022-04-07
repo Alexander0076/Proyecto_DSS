@@ -1,5 +1,5 @@
 <?php
-require_once '../conexion/conexion.php';
+require_once '../config/conexion.php';
 ?>
 
 <?php
@@ -22,7 +22,7 @@ if  (isset($_POST['insertar'])) {
 
     // $query1 = "INSERT INTO eventos(titulo,descripcion,Id_usuario,fecha) VALUES('$NombreE','$DescripcionE','$ResultadoCon','$FechaE')";
     mysqli_query($conn,"INSERT INTO eventos(img,titulo,descripcion,Id_usuario,fecha) VALUES('$img','$NombreE','$DescripcionE',$ResultadoCon,'$fechaE1')");      
-    header('Location: ../view/evento.php');
+    header('Location: ../staff/evento.php');
 
 }else if(isset($_POST['modificar'])){
     $idE=$_POST['id'];
@@ -32,14 +32,14 @@ if  (isset($_POST['insertar'])) {
     $fechaE1= str_replace('/','-',date('Y-m-d',strtotime($FechaE)));
 
     mysqli_query($conn,"UPDATE eventos SET titulo='$NombreE',descripcion='$DescripcionE',fecha='$fechaE1' WHERE Id_eventos = $idE");      
-    header('Location: ../view/evento.php');
+    header('Location: ../staff/evento.php');
 
 
 
 
 }else if (!empty($idE)) {
     mysqli_query($conn,"DELETE FROM eventos WHERE Id_eventos =$idE");      
-   header('Location: ../view/evento.php');
+   header('Location: ../staff/evento.php');
 }
 
 

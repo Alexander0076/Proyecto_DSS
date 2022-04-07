@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 06-04-2022 a las 02:30:48
+-- Tiempo de generación: 07-04-2022 a las 13:54:30
 -- Versión del servidor: 10.4.24-MariaDB
 -- Versión de PHP: 7.4.28
 
@@ -59,8 +59,15 @@ CREATE TABLE `eventos` (
   `titulo` varchar(60) NOT NULL,
   `descripcion` varchar(255) NOT NULL,
   `Id_usuario` int(11) NOT NULL,
-  `fecha` int(11) NOT NULL
+  `fecha` date NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Volcado de datos para la tabla `eventos`
+--
+
+INSERT INTO `eventos` (`Id_eventos`, `img`, `titulo`, `descripcion`, `Id_usuario`, `fecha`) VALUES
+(1, 'yxy.jpg', 'Pollo loco', 'Venta de panes con pollo en el Salvador del mundo', 2, '2022-04-27');
 
 -- --------------------------------------------------------
 
@@ -99,6 +106,15 @@ CREATE TABLE `tipousuario` (
   `tipoUsuario` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Volcado de datos para la tabla `tipousuario`
+--
+
+INSERT INTO `tipousuario` (`Id_tipoUsuario`, `tipoUsuario`) VALUES
+(1, 'Usuario'),
+(2, 'Staff'),
+(3, 'Admin');
+
 -- --------------------------------------------------------
 
 --
@@ -108,10 +124,19 @@ CREATE TABLE `tipousuario` (
 CREATE TABLE `usuario` (
   `Id_usuario` int(11) NOT NULL,
   `Nombre` varchar(50) NOT NULL,
+  `Foto` varchar(255) DEFAULT NULL,
   `usuario` varchar(50) NOT NULL,
   `contrasena` varchar(70) NOT NULL,
   `Id_tipousuario` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Volcado de datos para la tabla `usuario`
+--
+
+INSERT INTO `usuario` (`Id_usuario`, `Nombre`, `Foto`, `usuario`, `contrasena`, `Id_tipousuario`) VALUES
+(1, 'alex', NULL, 'alex.e', '123', 1),
+(2, 'elias', 'will.jpg', 'elias.v', '123', 2);
 
 --
 -- Índices para tablas volcadas
@@ -185,7 +210,7 @@ ALTER TABLE `comentarios`
 -- AUTO_INCREMENT de la tabla `eventos`
 --
 ALTER TABLE `eventos`
-  MODIFY `Id_eventos` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `Id_eventos` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT de la tabla `genero`
@@ -203,13 +228,13 @@ ALTER TABLE `musica`
 -- AUTO_INCREMENT de la tabla `tipousuario`
 --
 ALTER TABLE `tipousuario`
-  MODIFY `Id_tipoUsuario` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `Id_tipoUsuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT de la tabla `usuario`
 --
 ALTER TABLE `usuario`
-  MODIFY `Id_usuario` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `Id_usuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- Restricciones para tablas volcadas
